@@ -1,27 +1,36 @@
 <!DOCTYPE html>
 <html>
 
-<!-- Mirrored from framework7.io/kitchen-sink-ios/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 21 Mar 2016 08:56:44 GMT -->
+<!-- Mirrored from framework7.io/kitchen-sink-material/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 21 Mar 2016 09:18:33 GMT -->
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
-<title>Framework7 iOS</title>
-<link rel="stylesheet" href="./dist/css/framework7.ios.min.css">
-<link rel="stylesheet" href="./dist/css/framework7.ios.colors.min.css">
+<meta name="theme-color" content="#2196f3">
+<title>Framework7 Material</title>
+<link rel="stylesheet" href="./dist/css/framework7.material.min.css">
+<link rel="stylesheet" href="./dist/css/framework7.material.colors.min.css">
+<link href="http://fonts.googleapis.com/css?family=Roboto:400,300,500,700" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="css/kitchen-sink.css">
 <link rel="icon" href="img/icon.png">
-<link rel="apple-touch-icon" href="img/icon.png">
 </head>
 <body>
 <div class="statusbar-overlay"></div>
 <div class="panel-overlay"></div>
-<div class="panel panel-left panel-cover layout-dark">
-<div class="content-block-title">Left Panel</div>
+<div class="panel panel-left panel-cover">
+<div class="view navbar-fixed">
+<div class="pages">
+<div data-page="panel-left" class="page">
+<div class="navbar">
+<div class="navbar-inner">
+<div class="center">Left Panel</div>
+</div>
+</div>
+<div class="page-content">
 <div class="content-block">
-<p>This is a side panel. You can close it by clicking outsite or on this link: <a href="#" class="close-panel">close me</a>. You can put here anything, even another isolated view like in <a href="#" data-panel="right" class="open-panel">Right Panel</a></p>
+<p>This is a side panel/drawer. You can close it by clicking outsite or on this link: <a href="#" class="close-panel">close me</a>. You can put here anything, even another isolated view like in <a href="#" data-panel="right" class="open-panel">Right Panel</a></p>
 </div>
 <div class="content-block-title">Framework7 Kitchen Sink</div>
 <div class="list-block">
@@ -102,18 +111,22 @@
 <p>Long text block goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sem urna, gravida non scelerisque id, fringilla ac velit. Phasellus elementum a ipsum at ornare. Mauris sagittis rhoncus euismod. Integer convallis augue eu lacus ultrices, in dictum elit consequat. Nulla faucibus massa id felis egestas eleifend. Proin consequat dignissim magna ut scelerisque. Vestibulum ac lorem semper, posuere sapien nec, pharetra massa. Nulla a tellus facilisis, sollicitudin quam porta, aliquam lorem. Fusce dignissim eros ac diam molestie, ut ultrices lorem tristique. Ut facilisis augue ac nisi egestas malesuada. Nunc posuere tortor quis eleifend mollis. Aliquam erat volutpat. Donec feugiat elit tellus, nec convallis orci elementum in. Sed urna mi, vestibulum id tempus id, pretium et ante. Pellentesque eget sollicitudin ligula. Phasellus pellentesque velit eu porta suscipit.</p>
 </div>
 </div>
-<div class="panel panel-right panel-reveal layout-dark">
+</div>
+</div>
+</div>
+</div>
+<div class="panel panel-right panel-reveal">
 <div class="view view-right">
+<div class="pages navbar-fixed">
+<div data-page="panel-right1" class="page">
 <div class="navbar">
 <div class="navbar-inner">
-<div class="center sliding">Right Panel</div>
+<div class="center">Right Panel</div>
 </div>
 </div>
-<div class="pages navbar-through">
-<div data-page="panel-right1" class="page">
 <div class="page-content">
 <div class="content-block">
-<p>This is a right side panel. You can close it by clicking outsite or on this link: <a href="#" class="close-panel">close me</a>. You can put here anything, even another isolated view, try it:</p>
+<p>This is a right side panel. You can close it by clicking outsite or on this link: <a href="#" class="close-panel">close me</a>. You can put here anything, even another isolated view, try it: </p>
 </div>
 <div class="list-block">
 <ul>
@@ -138,21 +151,17 @@
 </div>
 <div class="views">
 <div class="view view-main">
+<div class="pages navbar-fixed">
+<div data-page="index" class="page">
 <div class="navbar">
 <div class="navbar-inner">
-<div class="left"></div>
-<div class="center sliding">Framework7</div>
+<div class="center">Framework7</div>
 <div class="right"><a href="#" class="open-panel link icon-only"><i class="icon icon-bars"></i></a></div>
 </div>
 </div>
-<div class="toolbar">
-<div class="toolbar-inner"><a href="#" class="link">Dummy Link</a><a href="#" data-popover=".popover-menu" class="open-popover link">Menu</a></div>
-</div>
-<div class="pages navbar-through toolbar-through">
-<div data-page="index" class="page">
 <div class="page-content">
 <div class="content-block-title">Welcome To Framework7</div>
-<div class="content-block"><a href="about.html" class="button">About Framework7</a></div>
+<div class="content-block"><a href="about.html" class="button button-raised">About Framework7</a></div>
 <div class="content-block-title">Framework7 Kitchen Sink</div>
 <div class="list-block">
 <ul>
@@ -191,6 +200,22 @@
 <div class="item-media"><i class="icon icon-f7"></i></div>
 <div class="item-inner">
 <div class="item-title">Contacts List</div>
+</div>
+</div></a></li>
+<li><a href="chips.html" class="item-link">
+<div class="item-content">
+<div class="item-media"><i class="icon icon-f7"></i></div>
+<div class="item-inner">
+<div class="item-title">Chips</div>
+<div class="item-after"><span class="badge bg-green">NEW</span></div>
+</div>
+</div></a></li>
+<li><a href="floating-button.html" class="item-link">
+<div class="item-content">
+<div class="item-media"><i class="icon icon-f7"></i></div>
+<div class="item-inner">
+<div class="item-title">Floating Action Button</div>
+<div class="item-after"><span class="badge bg-green">NEW</span></div>
 </div>
 </div></a></li>
 <li><a href="forms.html" class="item-link">
@@ -261,6 +286,7 @@
 <div class="item-media"><i class="icon icon-f7"></i></div>
 <div class="item-inner">
 <div class="item-title">Navbars And Toolbars</div>
+<div class="item-after"><span class="badge bg-green">NEW</span></div>
 </div>
 </div></a></li>
 <li><a href="notifications.html" class="item-link">
@@ -317,7 +343,7 @@
 <div class="item-content">
 <div class="item-media"><i class="icon icon-f7"></i></div>
 <div class="item-inner">
-<div class="item-title">Search Bar </div>
+<div class="item-title">Search Bar</div>
 </div>
 </div></a></li>
 <li><a href="panels.html" class="item-link">
@@ -386,14 +412,7 @@
 </div>
 <div class="list-block">
 <ul>
-<li><a href="transitions.html" class="item-link">
-<div class="item-content">
-<div class="item-media"><i class="icon icon-f7"></i></div>
-<div class="item-inner">
-<div class="item-title">Transitions And Effects</div>
-</div>
-</div></a></li>
-<li><a href="core-features.html" class="item-link">
+<li><a href="core-features.html" class="item-link ks-generate-page">
 <div class="item-content">
 <div class="item-media"><i class="icon icon-f7"></i></div>
 <div class="item-inner">
@@ -431,7 +450,6 @@
 </div>
 </div>
 <div class="popover popover-menu">
-<div class="popover-angle"></div>
 <div class="popover-inner">
 <div class="list-block">
 <ul>
@@ -446,7 +464,6 @@
 </div>
 </div>
 <div class="popover popover-music">
-<div class="popover-angle"></div>
 <div class="popover-inner">
 <div class="list-block media-list">
 <ul>
@@ -478,13 +495,52 @@
 </div>
 </div>
 </div>
+<div class="popover popover-contacts">
+<div class="popover-inner">
+<div class="list-block media-list">
+<ul>
+<li class="item-content">
+<div class="item-media"><img src="http://lorempixel.com/88/88/people/1" width="40"></div>
+<div class="item-inner">
+<div class="item-title-row">
+<div class="item-title">Ali Connors</div>
+</div>
+</div>
+</li>
+<li class="item-content">
+<div class="item-media"><img src="http://lorempixel.com/88/88/people/2" width="40"></div>
+<div class="item-inner">
+<div class="item-title-row">
+<div class="item-title">Sandra Adams</div>
+</div>
+</div>
+</li>
+<li class="item-content">
+<div class="item-media"><img src="http://lorempixel.com/88/88/people/3" width="40"></div>
+<div class="item-inner">
+<div class="item-title-row">
+<div class="item-title">Trevor Hansen</div>
+</div>
+</div>
+</li>
+<li><a href="#" class="item-link item-content bg-purple color-white ripple-white">
+<div class="item-media"><i class="icon ks-icon-edit"></i></div>
+<div class="item-inner">
+<div class="item-title-row">
+<div class="item-title">Add New</div>
+</div>
+</div></a></li>
+</ul>
+</div>
+</div>
+</div>
 <div class="login-screen">
 <div class="view">
 <div class="page">
 <div class="page-content login-screen-content">
 <div class="login-screen-title">Framework7</div>
 <form>
-<div class="list-block">
+<div class="list-block inputs-list">
 <ul>
 <li class="item-content">
 <div class="item-inner">
@@ -504,10 +560,8 @@
 </li>
 </ul>
 </div>
-<div class="list-block">
-<ul>
-<li><a href="#" class="item-link list-button">Sign In</a></li>
-</ul>
+<div class="content-block"><a href="#" class="button button-big">Sign In</a></div>
+<div class="content-block">
 <div class="list-block-label">Some text about login information.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
 </div>
 </form>
@@ -523,14 +577,12 @@
 </div>
 </div>
 <div class="picker-modal-inner">
-<div class="content-block">
-<p>Integer mollis nulla id nibh elementum finibus. Maecenas eget fermentum ipsum. Sed sagittis condimentum nisl at tempus. Duis lacus libero, laoreet vitae ligula a, aliquet eleifend sapien. Nullam sodales viverra sodales. Nulla hendrerit condimentum dolor facilisis tempor. Donec at est malesuada, sagittis nisi et, accumsan enim.</p>
-</div>
+<div class="content-block">Integer mollis nulla id nibh elementum finibus. Maecenas eget fermentum ipsum. Sed sagittis condimentum nisl at tempus. Duis lacus libero, laoreet vitae ligula a, aliquet eleifend sapien. Nullam sodales viverra sodales.</div>
 </div>
 </div>
 <script type="text/javascript" src="./dist/js/framework7.min.js"></script>
 <script type="text/javascript" src="js/kitchen-sink.js"></script>
 </body>
 
-<!-- Mirrored from framework7.io/kitchen-sink-ios/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 21 Mar 2016 08:57:07 GMT -->
+<!-- Mirrored from framework7.io/kitchen-sink-material/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 21 Mar 2016 09:18:55 GMT -->
 </html>
